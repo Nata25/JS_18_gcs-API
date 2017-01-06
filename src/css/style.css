@@ -1,0 +1,22 @@
+
+.heading,
+.subheading,
+.mainarea {
+    font-family: Helvetica, sans-serif;
+    color: #222;
+}
+
+.heading,
+.subheading {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.subheading {
+    margin-bottom: 40px;
+}
+
+.mainarea {
+    width: 50%;
+    margin: 0 auto;
+}
