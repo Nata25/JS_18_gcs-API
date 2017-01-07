@@ -1,6 +1,9 @@
-var searchKey = "017149004764189221444:_3kraw1vh5q";
+var searchKey = "017149004764189221444:_3kraw1vh5q",
+    form = document.forms[0];
 
-document.forms[0].addEventListener("submit", function(e) {
+form.children[0].focus();
+
+form.addEventListener("submit", function(e) {
     e.preventDefault();
     google.search.cse.element.getElement("results").execute(query.value);
 });
