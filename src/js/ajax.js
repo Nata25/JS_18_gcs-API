@@ -1,11 +1,11 @@
 var searchKey = "017149004764189221444:_3kraw1vh5q",
-    form = document.forms[0];
+    qstring = window.location.search,
+    q;
 
-form.children[0].focus();
-
-form.addEventListener("submit", function(e) {
+document.forms[0].addEventListener("submit", function(e) {
     e.preventDefault();
-    google.search.cse.element.getElement("results").execute(query.value);
+    q = query.value;
+    google.search.cse.element.getElement("results").execute(q);
 });
 
 window.__gcse = {
@@ -25,4 +25,9 @@ function myCallback() {
         tag: "searchresults-only",
         gname: "results"
     });
+    if (qstring.length > 0) {
+        q = decodeURIComponent(qstring.substr(7));
+        query.value = q;
+        google.search.cse.element.getElement("results").execute(q);
+    }
 }
