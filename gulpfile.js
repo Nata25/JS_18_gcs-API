@@ -20,12 +20,7 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('app/js'));
 });
 
-// gulp.task('compress', function (cb) {
-//   pump([
-//         gulp.src('app/js/script.js'),
-//         uglify(),
-//         gulp.dest('app/js')
-//     ],
-//     cb
-//   );
-// });
+gulp.task('watch', function() {
+    gulp.watch('src/css/*.css', ['styles']);
+    gulp.watch('src/js/*.js', ['scripts']);
+});
