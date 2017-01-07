@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
-    minifycss = require('gulp-minify-css'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
 
-gulp.task('default', function() {
-    console.log("hello");
+gulp.task('styles', function() {
+    return gulp.src('src/css/*.css')
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('app/css'));
 });
