@@ -20,7 +20,14 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('app/js'));
 });
 
+gulp.task('title', function () {
+    return gulp.src('src/js/title.js')
+        .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('app/js'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('src/css/*.css', ['styles']);
-    gulp.watch('src/js/*.js', ['scripts']);
+    gulp.watch('src/js/*.js', ['scripts', 'title']);
 });

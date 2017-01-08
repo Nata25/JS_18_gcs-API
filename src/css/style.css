@@ -1,8 +1,8 @@
 .heading,
 .subheading,
 .mainarea {
-    font-family: Helvetica, sans-serif;
     color: #222;
+    font-family: Helvetica, sans-serif;
 }
 
 .heading,
@@ -39,10 +39,10 @@
 
 .searchform input[type=submit] {
     padding: 10px 30px;
+    transition: background-color .3s;
     background-color: #74ad6e;
     color: #fff;
     cursor: pointer;
-    transition: background-color .3s;
 }
 
 .searchform input[type=submit]:hover {
