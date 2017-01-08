@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    pump = require('pump'),
     rename = require('gulp-rename');
 
 gulp.task('styles', function() {
