@@ -26,8 +26,25 @@
 }
 
 .searchform input {
-    height: 30px;
+    height: 40px;
+    padding: 10px;
     border-radius: 5px;
-    box-shadow: 0;
     font-size: 16px;
+    box-sizing: border-box;
+}
+
+.searchform input[type=text] {
+    width: 200px;
+}
+
+.searchform input[type=submit] {
+    padding: 10px 30px;
+    background-color: #74ad6e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.searchform input[type=submit]:hover {
+    background-color: #51c345;
 }
