@@ -10,3 +10,5 @@ Example of search queries: `Мушля`, `Київ`, `Вінниця`, `Ужго
 Do not perform excessive searches as a free GCS key is used (100 query requests per day).
 
 Two-page layout, custom search box for query input + native GCS element for results.
+
+[Open on .github.io](https://nata25.github.io/JS_18_gcs-API/).
