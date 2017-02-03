@@ -8,7 +8,7 @@ gulp.task('styles', function() {
     return gulp.src('src/css/*.css')
         .pipe(cleanCSS())
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('doc/css'));
+        .pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('scripts', function () {
@@ -16,14 +16,14 @@ gulp.task('scripts', function () {
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('doc/js'));
+        .pipe(gulp.dest('docs/js'));
 });
 
 gulp.task('title', function () {
     return gulp.src('src/js/title.js')
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('doc/js'));
+        .pipe(gulp.dest('docs/js'));
 });
 
 gulp.task('watch', function() {
